@@ -23,7 +23,7 @@ This project goes beyond simple string evaluation by implementing a custom **Rec
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/MariamA-Helal/CLI-Calculator.git](https://github.com/MariamA-Helal/CLI-Calculator.git)
+   git clone https://github.com/MariamA-Helal/CLI-Calculator.git
    cd CLI-Calculator
 
 2. **Run the application:**
