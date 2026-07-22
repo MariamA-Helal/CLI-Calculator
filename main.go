@@ -12,6 +12,7 @@ import (
 func main() {
 	fmt.Println("==== CLI Calculator Started... ====")
 	fmt.Println("Type 'exit' or 'quit' to close the program.")
+	fmt.Println("Type 'history' to reveiw program history.")
 	fmt.Println("--------------------------------------------")
 
 	reader := bufio.NewReader(os.Stdin)
@@ -36,9 +37,16 @@ func main() {
 			break
 		}
 
+		if strings.ToLower(input) == "history" {
+			calculator.PrintHistory()
+			continue
+		}
+
 		result := calculator.Evaluate(input)
 
 		fmt.Printf(" your result: %.2f\n ", result)
+
+		calculator.AddRecord(input, result)
 
 	}
 
